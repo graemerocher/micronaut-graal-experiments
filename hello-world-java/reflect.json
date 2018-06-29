@@ -77,10 +77,6 @@
     "allDeclaredConstructors": true
   },
   {
-    "name": "io.micronaut.http.client.reactor.$ReactorReactiveClientResultTransformerDefinitionClass",
-    "allDeclaredConstructors": true
-  },
-  {
     "name": "io.micronaut.http.client.converters.$ClientResponseConverterDefinitionClass",
     "allDeclaredConstructors": true
   },
@@ -417,10 +413,6 @@
     "allDeclaredConstructors": true
   },
   {
-    "name": "io.micronaut.reactive.rxjava1.converters.$RxJava1ConverterRegistrarDefinitionClass",
-    "allDeclaredConstructors": true
-  },
-  {
     "name": "io.micronaut.jackson.convert.$ObjectNodeToConvertibleValuesConverterDefinitionClass",
     "allDeclaredConstructors": true
   },
@@ -478,10 +470,6 @@
   },
   {
     "name": "io.micronaut.reactive.rxjava2.$RxJava2InstrumentationDefinitionClass",
-    "allDeclaredConstructors": true
-  },
-  {
-    "name": "io.micronaut.reactive.reactor.$ReactorInstrumentationDefinitionClass",
     "allDeclaredConstructors": true
   },
   {
