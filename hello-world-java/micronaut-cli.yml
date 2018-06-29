@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: hello.world.java
+---
+testFramework: junit
+sourceLanguage: java
