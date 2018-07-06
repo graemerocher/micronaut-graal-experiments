@@ -26,7 +26,7 @@ apply plugin:"net.ltgt.apt-idea"
 repositories {
     mavenLocal()
     mavenCentral()
-    maven { url "https://jcenter.bintray.com" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
 }
 
 dependencyManagement {
@@ -35,6 +35,7 @@ dependencyManagement {
     }
 }
 
+ext['netty.version'] = '4.1.26.Final-SNAPSHOT'
 dependencies {
     annotationProcessor "io.micronaut:inject-java"
     compile "io.micronaut:http-client"
@@ -45,7 +46,7 @@ dependencies {
 
     // workaround for https://github.com/oracle/graal/issues/494
     compile 'com.jcraft:jzlib:1.1.3'
-    compile 'com.oracle.svm:svm:GraalVM-1.0.0-rc2'
+    compile 'com.oracle.substratevm:svm:GraalVM-1.0.0-rc2'
     runtime "ch.qos.logback:logback-classic:1.2.3"
     testCompile "junit:junit:4.12"
     testCompile "io.micronaut:inject-java"
