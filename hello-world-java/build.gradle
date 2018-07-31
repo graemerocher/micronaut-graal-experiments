@@ -35,7 +35,6 @@ dependencyManagement {
     }
 }
 
-ext['netty.version'] = '4.1.26.Final-SNAPSHOT'
 dependencies {
     annotationProcessor "io.micronaut:inject-java"
     compile "io.micronaut:http-client"
