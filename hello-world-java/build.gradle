@@ -45,7 +45,7 @@ dependencies {
 
     // workaround for https://github.com/oracle/graal/issues/494
     compile 'com.jcraft:jzlib:1.1.3'
-    compile 'com.oracle.substratevm:svm:GraalVM-1.0.0-rc2'
+    compile 'com.oracle.substratevm:svm:GraalVM-1.0.0-rc4'
     runtime "ch.qos.logback:logback-classic:1.2.3"
     testCompile "junit:junit:4.12"
     testCompile "io.micronaut:inject-java"
