@@ -9,10 +9,6 @@
         ]
     },
     {
-        "name": "io.micronaut.web.router.RouteBuilder[]",
-        "allDeclaredConstructors": true
-    },
-    {
         "name": "io.micronaut.http.server.netty.NettyHttpResponseFactory",
         "allDeclaredConstructors": true
     },
