@@ -1,7 +1,5 @@
 micronaut:
     application:
-        name: hello-world-java
-                
-#Uncomment to set server port
-#    server:
-#        port: 8080
+        name: hello-world-java                
+    server:
+       port: 8080

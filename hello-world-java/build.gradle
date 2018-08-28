@@ -61,31 +61,3 @@ run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1')
 mainClassName = "hello.world.java.Application"
 compileJava.options.compilerArgs += '-parameters'
 compileTestJava.options.compilerArgs += '-parameters'
-
-
-task(extractZip, type:Copy, dependsOn: shadowJar) {
-    from zipTree(shadowJar.archivePath)
-    into "$buildDir/jar-output"
-}
-
-task(generateReflectJson, dependsOn: extractZip) {
-    doLast {
-        def json = new JsonBuilder()
-        def array = []
-        array << [name:"io.netty.channel.socket.nio.NioServerSocketChannel", methods: [[name:"<init>", parameterTypes:[]]] ]
-
-        new File("$buildDir/jar-output/META-INF/services").eachFile { f ->
-            f.eachLine { line ->
-                if (!line.startsWith("#") && !line.contains("servlet")) {
-                    array << [name:line, allDeclaredConstructors:true]    
-                }
-                
-            }
-        }
-        json.call(array)
-
-        new File("reflect.json").withWriter { writer ->
-            json.writeTo(writer)
-        }
-    }
-}
