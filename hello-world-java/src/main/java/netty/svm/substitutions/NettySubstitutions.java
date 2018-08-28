@@ -17,6 +17,12 @@ final class Target_io_netty_util_internal_logging_InternalLoggerFactory {
     }
 }
 
+@TargetClass(className = "io.micronaut.caffeine.cache.UnsafeRefArrayAccess")
+final class Target_io_micronaut_caffeine_cache_UnsafeRefArrayAccess {
+    @Alias @RecomputeFieldValue(kind = RecomputeFieldValue.Kind.ArrayIndexShift, declClass = Object[].class)
+    public static int REF_ELEMENT_SHIFT;
+}
+
 @TargetClass(className = "io.netty.util.internal.PlatformDependent0")
 final class Target_io_netty_util_internal_PlatformDependent0 {
     @Alias @RecomputeFieldValue(kind = Kind.FieldOffset, //
