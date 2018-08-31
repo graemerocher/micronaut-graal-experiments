@@ -49,6 +49,21 @@ To build the native image run the `./build-native-image.sh` script:
 ./build-native-image.sh
 ```
 
+Or explicitly:
+
+```
+native-image --class-path build/libs/hello-world-function-0.1-all.jar \
+             -H:ReflectionConfigurationFiles=reflect.json \
+             -H:EnableURLProtocols=http \
+             -H:IncludeResources="application.yml|META-INF/services/*.*" \
+             -H:Name=hw \
+             -H:Class=io.micronaut.function.executor.FunctionApplication \
+             -H:+ReportUnsupportedElementsAtRuntime \
+             -H:+AllowVMInspection
+```
+
+The `-H:Name` flag defines the name of the function to be built. In this case `hw`.
+
 ## Run your function
 
 The function is now executable:
