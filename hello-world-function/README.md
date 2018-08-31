@@ -27,7 +27,11 @@ Run the function via Gradle:
 $ ./gradlew run
 ```
 
-This will generate a `reflect.json` file in the root of the project.
+Don't worry about the output, this is purely to generate an initial `reflect.json` file in the root of the project that can be used as a base for building the native image.
+
+Micronaut does not use reflection for DI but does do dynamic classloading, so any classes that are dynamically loaded have to be declared ahead of time in `reflect.json`.
+
+Also any POJOs exposed via Jackson have to be declared, otherwise Jackson will not be able to serialize to JSON correctly.
 
 ## Build the Function
 
