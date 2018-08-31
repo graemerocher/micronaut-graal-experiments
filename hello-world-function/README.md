@@ -1,4 +1,4 @@
-# Micronaut Functions with Graal
+# Native Micronaut Functions with Graal
 
 Demonstrates buiding a Micronaut function into a Graal native image
 
