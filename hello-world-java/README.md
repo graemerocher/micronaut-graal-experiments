@@ -54,6 +54,12 @@ Run:
 ./hw
 ```
 
+Application starts up:
+
+```
+09:31:41.356 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 15ms. Server Running: http://localhost:8080
+```
+
 ### Test the Application
 
 Run:
