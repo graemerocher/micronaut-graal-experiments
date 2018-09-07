@@ -25,7 +25,7 @@ Run `./gradlew assemble`
 Run 
 
 ```bash
-$ java -jar build/libs/hello-world-java-0.1-all.jar
+$ java -cp build/libs/hello-world-java-0.1-all.jar io.micronaut.graal.reflect.GraalClassLoadingAnalyzer
 ```
 
 This will generate a `build/reflect.json` file after performing classloading analysis.

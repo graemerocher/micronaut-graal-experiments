@@ -24,10 +24,10 @@ mvn install:install-file -Dfile=${JAVA_HOME}/jre/lib/svm/builder/svm.jar -Dgroup
 Run the function via Gradle:
 
 ```
-$ ./gradlew run
+$ java -cp build/libs/hello-world-function-0.1-all.jar io.micronaut.graal.reflect.GraalClassLoadingAnalyzer 
 ```
 
-Don't worry about the output, this is purely to generate an initial `reflect.json` file in the root of the project that can be used as a base for building the native image.
+This is purely to generate an initial `reflect.json` file in the root of the project that can be used as a base for building the native image.
 
 Micronaut does not use reflection for DI but does do dynamic classloading, so any classes that are dynamically loaded have to be declared ahead of time in `reflect.json`.
 
