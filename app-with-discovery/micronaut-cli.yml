@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: app.with.discovery
+---
+testFramework: junit
+sourceLanguage: java
