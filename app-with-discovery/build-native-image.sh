@@ -8,4 +8,5 @@ native-image --class-path build/libs/app-with-discovery-0.1-all.jar \
 			 -H:Class=app.with.discovery.Application \
 			 -H:+ReportUnsupportedElementsAtRuntime \
 			 -H:+AllowVMInspection \
-			 --delay-class-initialization-to-runtime=io.netty.handler.codec.http.HttpObjectEncoder,io.netty.handler.codec.http.websocketx.WebSocket00FrameEncoder,io.netty.handler.codec.http.HttpObjectDecoder
+			 --delay-class-initialization-to-runtime=io.netty.handler.codec.http.HttpObjectEncoder,io.netty.handler.codec.http.websocketx.WebSocket00FrameEncoder,io.netty.handler.codec.http.HttpObjectDecoder,io.netty.handler.ssl.util.ThreadLocalInsecureRandom \
+			 --rerun-class-initialization-at-runtime=sun.security.jca.JCAUtil$CachedSecureRandomHolder
