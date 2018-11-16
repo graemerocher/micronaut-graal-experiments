@@ -1,5 +1,0 @@
-micronaut:
-    application:
-        name: hello-world-java                
-    server:
-       port: 8080

@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: fresh.graal
+---
+testFramework: junit
+sourceLanguage: java
