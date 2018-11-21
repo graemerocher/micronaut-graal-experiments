@@ -1,0 +1,48 @@
+[ {
+  "name" : "io.netty.channel.socket.nio.NioServerSocketChannel",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "io.netty.channel.socket.nio.NioSocketChannel",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "io.reactivex.Maybe",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "io.reactivex.Observable",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "io.reactivex.Single",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "java.lang.FunctionalInterface",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "javax.annotation.Nullable",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "javax.annotation.PreDestroy",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "javax.inject.Inject",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "javax.inject.Named",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "javax.inject.Singleton",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "sun.security.ssl.SSLContextImpl$TLSContext",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "[Lio.micronaut.http.MediaType;",
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "io.micronaut.http.hateos.DefaultLink",
+  "allPublicMethods" : true,
+  "allDeclaredConstructors" : true
+}, {
+  "name" : "io.micronaut.http.hateos.JsonError",
+  "allPublicMethods" : true,
+  "allDeclaredConstructors" : true
+} ]

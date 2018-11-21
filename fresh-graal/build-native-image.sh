@@ -1,8 +1,7 @@
 ./gradlew assemble
-java -cp build/libs/fresh-graal-0.1-all.jar io.micronaut.graal.reflect.GraalClassLoadingAnalyzer
 native-image --no-server \
              --allow-incomplete-classpath -cp build/libs/fresh-graal-0.1-all.jar \
-             -H:ReflectionConfigurationFiles=build/reflect.json \
+             -H:ReflectionConfigurationFiles=reflect.json \
              -H:EnableURLProtocols=http \
              -H:IncludeResources="logback.xml|application.yml|META-INF/services/*.*" \
              -H:Name=fresh-graal \
